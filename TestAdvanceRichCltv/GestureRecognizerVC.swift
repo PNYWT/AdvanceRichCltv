@@ -31,11 +31,16 @@ class GestureRecognizerVC: UIViewController {
     }
     
     func setupGesture(){
+        //move view
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         imageView.addGestureRecognizer(panGestureRecognizer)
-
+        //zoom view
         pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
         imageView.addGestureRecognizer(pinchGestureRecognizer)
+        //rotation view
+        let rotationGestureRecognizer = UIRotationGestureRecognizer(target: self, action: #selector(handleRotation(_:)))
+        imageView.addGestureRecognizer(rotationGestureRecognizer)
+
     }
     
     //move view
@@ -60,6 +65,14 @@ class GestureRecognizerVC: UIViewController {
         
         let scale = recognizer.scale
         view.transform = initialTransform.scaledBy(x: scale, y: scale)
+    }
+    
+    //rotation view
+    @objc func handleRotation(_ gestureRecognizer: UIRotationGestureRecognizer) {
+        if let view = gestureRecognizer.view {
+            view.transform = view.transform.rotated(by: gestureRecognizer.rotation)
+            gestureRecognizer.rotation = 0
+        }
     }
 
 }
