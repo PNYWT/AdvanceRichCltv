@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12FBCE62F2396234BF0DA2C8 /* Pods_TestAdvanceRichCltv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FADEA1BAAF7A4137A5F7769 /* Pods_TestAdvanceRichCltv.framework */; };
+		D75FBA1B2A305965002ADE81 /* GestureRecognizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75FBA192A305965002ADE81 /* GestureRecognizerVC.swift */; };
+		D75FBA1C2A305965002ADE81 /* GestureRecognizerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75FBA1A2A305965002ADE81 /* GestureRecognizerVC.xib */; };
 		D7D940392A2EEE0100C85BA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D940382A2EEE0100C85BA0 /* AppDelegate.swift */; };
 		D7D9403B2A2EEE0100C85BA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9403A2A2EEE0100C85BA0 /* SceneDelegate.swift */; };
 		D7D9403D2A2EEE0100C85BA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9403C2A2EEE0100C85BA0 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		8652941BD66F6C6A18899758 /* Pods-TestAdvanceRichCltv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdvanceRichCltv.release.xcconfig"; path = "Target Support Files/Pods-TestAdvanceRichCltv/Pods-TestAdvanceRichCltv.release.xcconfig"; sourceTree = "<group>"; };
 		9FADEA1BAAF7A4137A5F7769 /* Pods_TestAdvanceRichCltv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdvanceRichCltv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75FBA192A305965002ADE81 /* GestureRecognizerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerVC.swift; sourceTree = "<group>"; };
+		D75FBA1A2A305965002ADE81 /* GestureRecognizerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureRecognizerVC.xib; sourceTree = "<group>"; };
 		D7D940352A2EEE0100C85BA0 /* TestAdvanceRichCltv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAdvanceRichCltv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D940382A2EEE0100C85BA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D9403A2A2EEE0100C85BA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D75FBA1D2A30596D002ADE81 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9404C2A2EEE7700C85BA0 /* CltvAdvanceCell.swift */,
+				D7D940502A2EF2EB00C85BA0 /* UICollectionViewPagingFlowLayout.swift */,
+				D7D9404D2A2EEE7700C85BA0 /* CltvAdvanceCell.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		D7D9402C2A2EEE0100C85BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +94,9 @@
 				D7D940382A2EEE0100C85BA0 /* AppDelegate.swift */,
 				D7D9403A2A2EEE0100C85BA0 /* SceneDelegate.swift */,
 				D7D9403C2A2EEE0100C85BA0 /* ViewController.swift */,
-				D7D9404C2A2EEE7700C85BA0 /* CltvAdvanceCell.swift */,
-				D7D940502A2EF2EB00C85BA0 /* UICollectionViewPagingFlowLayout.swift */,
-				D7D9404D2A2EEE7700C85BA0 /* CltvAdvanceCell.xib */,
+				D75FBA192A305965002ADE81 /* GestureRecognizerVC.swift */,
+				D75FBA1A2A305965002ADE81 /* GestureRecognizerVC.xib */,
+				D75FBA1D2A30596D002ADE81 /* Collection */,
 				D7D9403E2A2EEE0100C85BA0 /* Main.storyboard */,
 				D7D940412A2EEE0100C85BA0 /* Assets.xcassets */,
 				D7D940432A2EEE0100C85BA0 /* LaunchScreen.storyboard */,
@@ -160,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75FBA1C2A305965002ADE81 /* GestureRecognizerVC.xib in Resources */,
 				D7D940452A2EEE0100C85BA0 /* LaunchScreen.storyboard in Resources */,
 				D7D940422A2EEE0100C85BA0 /* Assets.xcassets in Resources */,
 				D7D940402A2EEE0100C85BA0 /* Main.storyboard in Resources */,
@@ -218,6 +233,7 @@
 			files = (
 				D7D9403D2A2EEE0100C85BA0 /* ViewController.swift in Sources */,
 				D7D940392A2EEE0100C85BA0 /* AppDelegate.swift in Sources */,
+				D75FBA1B2A305965002ADE81 /* GestureRecognizerVC.swift in Sources */,
 				D7D9403B2A2EEE0100C85BA0 /* SceneDelegate.swift in Sources */,
 				D7D9404E2A2EEE7700C85BA0 /* CltvAdvanceCell.swift in Sources */,
 				D7D940512A2EF2EB00C85BA0 /* UICollectionViewPagingFlowLayout.swift in Sources */,

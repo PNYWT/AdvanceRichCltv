@@ -87,4 +87,11 @@ extension ViewController: UICollectionViewDelegate{
             self.cltvRichAdvance.animateCell(cell)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let md = imgArrShow[indexPath.row]
+        let vc = GestureRecognizerVC()
+        vc.imagePassing = UIImage(named: md)!
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
